@@ -33,12 +33,14 @@ function callBack(entries) {
                 case "SKILL":
                     document.getElementById('img-skill-section').classList.add('show')
                     document.getElementById('img-skill-2-section').classList.add('show')
+                    document.getElementById('skill-content').classList.add('show')
                     break;
                 case "PROJECT":
                     document.getElementById('img-project-section').classList.add('show')
                     break;
                 case "CONTACT":
                     document.getElementById('img-contact-section').classList.add('show')
+                    document.getElementById('contact-content').classList.add('show')
                     break;
             }
         }
