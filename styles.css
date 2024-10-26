@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#252525;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.navigation{
+    width:100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+}
+.navigation ul{
+    list-style: none;
+    float: right;
+    margin :20px;
+    margin-right: 70px;
+}
+.navigation li{
+    text-decoration: none;
+    color: #252525;
+    display:inline-block;
+}
+.navigation a{
+    margin: 0px 15px 0px 15px;
+   text-decoration: none;
+   color: #252525;
+}
+.division-white {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.triangle-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 461px solid transparent;
+    border-bottom: 100vh solid #252525;
+}
+.triangle-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid #1c0fb200;
+    border-right: 300px solid #252525;
+}
+.panel-indicator {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 45px;
+    left: 200px;
+    font-weight: 600;
+}
+.line-left {
+    width: 10px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    transform: skewX(32deg);
+}
+.line-bottom {
+    width: 10px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    transform: skewX(32deg);
+}
+.img-home-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 85%;
+    position: absolute;
+    top: 65px;
+    right: -1000px;
+    transition: 500ms;
+}
+.img-home-section.show {
+    right: 95px;
+}
+.img-about-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 85%;
+    position: absolute;
+    top: 110px;
+    right: 3000px;
+    transition: 500ms;
+}
+.img-about-section.show {
+    right: 95px;
+}
+
+.img-skill-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 60%;
+    position: absolute;
+    top: 290px;
+    right: -2000px;
+    transition: 500ms;
+}
+.img-skill-section.show {
+    right: 20px;
+}
+.img-skill-2-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 60%;
+    position: absolute;
+    top: 30px;
+    right: -2000px;
+    transition: 500ms;
+}
+.img-skill-2-section.show {
+    right: 20px;
+}
+.img-project-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 85%;
+    position: absolute;
+    top: 65px;
+    right: 2000px;
+    transition: 500ms;
+}
+
+.img-project-section.show {
+    right: 95px;
+}
+.img-contact-section {
+    /* z-index: 1000 !important; */
+    position: absolute;
+    height: 85%;
+    position: absolute;
+    top: 110px;
+    right: -2000px;
+    transition: 500ms;
+}.img-contact-section.show {
+    right: 95px;
+}
+/*Home*/
+.home-content{
+    border-left: solid 10px #0080FF;
+    height: 50vh;
+    width: 45%;
+    position: absolute;
+    top: -100vh;
+    left: 100px;
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.home-content.show{
+    top: 25vh;
+}
+.home-content {
+    color:#FFFFFF;
+}
+.hobby{
+    color:#0080FF;
+}
+.home-content h1{
+    font-size: 40px;
+}
+.btn-resume {
+    width: 150px;
+    border-radius: 5px;
+    background-color: #0080FF;
+    color: white;
+    height: 40px;
+    border: 0px;
+    font-family: calibri;
+    position: absolute;
+    bottom: 0px;
+    transition: 500ms;
+    cursor: pointer;
+}
+.btn-resume:hover{
+    background-color: #026bd4;
+}
+/*ABOUT*/
+.about-content{
+    border-left: solid 10px #0080FF;
+    height: 50vh;
+    width: 45%;
+    position: absolute;
+    top: -100vh;
+    left: 100px;
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.about-content.show{
+    top: 25vh;
+}
+.about-content {
+    color:#FFFFFF;
+}
+.about-content p {
+    font-size: 30px;
+    font-family: calibri;
+    font-weight: 100;
+}
+.skill-content{
+    height: 90vh;
+    width: 45%;
+    position: absolute;
+    top: 5vh;
+    left: 100px;
+    transition: 500ms;
+}
+.skill-tree-line{
+    width: 5px;
+    height: 90vh;
+    background-color: #FFFF;
+    margin:auto;
+}
