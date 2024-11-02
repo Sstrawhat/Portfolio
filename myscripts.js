@@ -23,28 +23,60 @@ function callBack(entries) {
         if (entry.isIntersecting) {
             switch (entry['target']['id']) {
                 case "HOME":
-                    document.getElementById('img-home-section').classList.add('show')
-                    document.getElementById('home-content').classList.add('show')
+                    active('home-nav');
+                    showtime('division-white-home',300);
+                    showtime('home-content',500);
+                    showtime('sub-content-home',700);
+                    showtime('panel-indicator-home',800);
+                    
+
                     break;
                 case "ABOUT":
-                    document.getElementById('img-about-section').classList.add('show')
-                    document.getElementById('about-content').classList.add('show')
+                    active('about-nav');
+                    showtime('division-white-about',300);
+                    showtime('about-content',500);
+                    showtime('sub-content-about',700);
+                    showtime('panel-indicator-about',800);
                     break;
                 case "SKILL":
-                    document.getElementById('img-skill-section').classList.add('show')
-                    document.getElementById('img-skill-2-section').classList.add('show')
-                    document.getElementById('skill-content').classList.add('show')
+                    active('skill-nav');
+                    showtime('division-white-skill',300);
+                    showtime('skill-tree-line',1000);
+                    showtime('panel-indicator-skill',800);
+                    showtime('circle-csharp',500);
+                    showtime('circle-netcore',600);
+                    showtime('circle-sql',700);
+                    showtime('circle-js',800);
+                    showtime('circle-html',900);
+                    showtime('circle-css',1000);
+                  
                     break;
                 case "PROJECT":
-                    document.getElementById('img-project-section').classList.add('show')
+                    active('project-nav');
+                    showtime('division-white-project',300);
+                    showtime('panel-indicator-project',800);
                     break;
                 case "CONTACT":
-                    document.getElementById('img-contact-section').classList.add('show')
-                    document.getElementById('contact-content').classList.add('show')
+                    active('contact-nav');
                     break;
             }
         }
     });
+}
+
+function showtime(element,time){
+    setTimeout(() => {
+        document.getElementById(element).classList.add('show')
+      }, time);
+}
+
+function active(element){
+    document.getElementById('home-nav').classList.remove('active')
+    document.getElementById('about-nav').classList.remove('active')
+    document.getElementById('skill-nav').classList.remove('active')
+    document.getElementById('project-nav').classList.remove('active')
+    document.getElementById('contact-nav').classList.remove('active')
+    document.getElementById(element).classList.add('active')
 }
 
 //   entries.forEach(element => {

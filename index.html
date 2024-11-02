@@ -9,75 +9,79 @@
 </head>
 
 <body>
+    <span class="span-icon span-1">C#</span>
+    <span class="span-icon span-2">.NET CORE</span>
+    <span class="span-icon span-3">SQL</span>
+    <span class="span-icon span-4">JAVASCRIPT</span>
+    <span class="span-icon span-5">HTML</span>
+    <span class="span-icon span-6">CSS</span>
     <div class="navigation">
         <ul>
-            <li><a href="#HOME">HOME</a></li>
-            <li><a href="#ABOUT">ABOUT</a></li>
-            <li><a href="#SKILL">SKILL</a></li>
-            <li><a href="#PROJECT">PROJECT</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a class="nav" id="home-nav" href="#HOME">HOME</a></li>
+            <li><a class="nav" id="about-nav"  href="#ABOUT">ABOUT</a></li>
+            <li><a class="nav" id="skill-nav"  href="#SKILL">SKILL</a></li>
+            <li><a class="nav" id="project-nav"  href="#PROJECT">PROJECT</a></li>
+            <li><a class="nav" id="contact-nav"  href="#CONTACT">CONTACT</a></li>
         </ul>
     </div>
     <section id="HOME" class="section">
-        <div class="division-white">
+        <div class="division-white" id="division-white-home">
             <div class="triangle-left"></div>
             <div class="triangle-bottom">
-                <span class="panel-indicator">HOME</span>
-            </div>
-            <div class="line-left"></div>
-            <div class="line-bottom"></div>
+                <span class="panel-indicator" id="panel-indicator-home">HOME</span>
+            </div>  
             <img id="img-home-section" class="img img-home-section" src="image/home-image.png">
         </div>
         <div id="home-content" class="home-content">
-            <h1>
-                I'M ASHLEY FAJARDO
-            </h1>
-            <h1>
-                A
-
-                <span class="hobby">
-                    SOFTWARE DEVELOPER
-                </span>
-            </h1>
-            <button type="button" class="btn-resume">Download resume</button>
+            <div class="sub-content-home" id="sub-content-home">
+                <h1>
+                    I'M ASHLEY FAJARDO
+                </h1>
+                <h1>
+                    A
+                    <span class="hobby">
+                        SOFTWARE DEVELOPER
+                    </span>
+                </h1>
+                <button type="button" class="btn-resume">Download resume</button>
+            </div>
         </div>
     </section>
     <section id="ABOUT" class="section">
-        <div class="division-white">
+        <div class="division-white" id="division-white-about">
             <div class="triangle-left"></div>
             <div class="triangle-bottom">
-                <span class="panel-indicator">ABOUT</span>
+                <span class="panel-indicator" id="panel-indicator-about">ABOUT</span>
             </div>
-            <div class="line-left"></div>
-            <div class="line-bottom"></div>
             <img id="img-about-section" class="img img-about-section" src="image/about-image.png">
         </div>
         <div id="about-content" class="about-content">
-            <p>A passionate and results-oriented software
-                engineer with 4 years of experience designing,
-                building, and deploying high-quality apps.
-                Proficient in a variety of programming
-                languages and frameworks, including
-                [C#,SQL HTML,CSS,JAVASCRIPT,
-                ASP.NET, .NET, Entity framework,
-                Figma and others], with an emphasis on clean,
-                maintainable code and scalable software solutions.</p>
+            <div class="sub-content-about" id="sub-content-about">
+                <p>A passionate and results-oriented software
+                    engineer with 4 years of experience designing,
+                    building, and deploying high-quality apps.
+                    Proficient in a variety of programming
+                    languages and frameworks, including
+                    [C#,SQL HTML,CSS,JAVASCRIPT,
+                    ASP.NET, .NET, Entity framework,
+                    Figma and others], with an emphasis on clean,
+                    maintainable code and scalable software solutions.</p>
+            </div>
+
         </div>
     </section>
     <section id="SKILL" class="section">
-        <div class="division-white">
+        <div class="division-white" id="division-white-skill">
             <div class="triangle-left"></div>
             <div class="triangle-bottom">
-                <span class="panel-indicator">SKILL</span>
+                <span class="panel-indicator" id="panel-indicator-skill">SKILL</span>
             </div>
-            <div class="line-left"></div>
-            <div class="line-bottom"></div>
             <img id="img-skill-2-section" class="img img-skill-2-section" src="image/skill-2-image.png">
             <img id="img-skill-section" class="img img-skill-section" src="image/skill-image.png">
         </div>
         <div id="skill-content" class="skill-content">
-            <div class="skill-tree-line">
-                <div class="circle">
+            <div class="skill-tree-line" id="skill-tree-line">
+                <div class="circle circle-right" id="circle-csharp">
                     <div class="line-circle-right"></div>
                     <img src="image/csharp.png">
                     <div class="detail-right">
@@ -86,7 +90,7 @@
                             optimising performance, and I am skilled in C#.</p>
                     </div>
                 </div>
-                <div class="circle">
+                <div class="circle circle-left" id="circle-netcore">
                     <div class="line-circle-left"></div>
                     <img src="image/netcore.png">
                     <div class="detail-left">
@@ -98,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="circle">
+                <div class="circle circle-right" id="circle-sql">
                     <div class="line-circle-right"></div>
                     <img src="image/sql.png">
                     <div class="detail-right">
@@ -109,7 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="circle">
+                <div class="circle circle-left" id="circle-js">
                     <div class="line-circle-left"></div>
                     <img src="image/js.png">
                     <div class="detail-left">
@@ -120,7 +124,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="circle">
+                <div class="circle circle-right" id="circle-html">
                     <div class="line-circle-right"></div>
                     <img src="image/html.png">
                     <div class="detail-right">
@@ -131,7 +135,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="circle">
+                <div class="circle circle-left" id="circle-css">
                     <div class="line-circle-left"></div>
                     <img src="image/css.png">
                     <div class="detail-left">
@@ -146,15 +150,35 @@
         </div>
     </section>
     <section id="PROJECT" class="section">
-        <div class="division-white">
+
+        <div class="division-white" id="division-white-project">
             <div class="triangle-left"></div>
             <div class="triangle-bottom">
-                <span class="panel-indicator">PROJECT</span>
+                <span class="panel-indicator" id="panel-indicator-project">PROJECT</span>
             </div>
-            <div class="line-left"></div>
-            <div class="line-bottom"></div>
-            <img id="img-project-section" class="img img-project-section" src="image/about-image.png">
+            <img id="img-project-section" class="img img-project-section" src="image/project-image.png">
         </div>
+
+        <div class="container">
+            <div class="slider">
+                <div class="box1">
+                </div>
+                <div class="box2">
+                </div>
+                <div class="box3">
+                </div>
+                <div class="box4">
+                </div>
+                <div class="box5">
+                </div>
+                <div class="box6">
+                </div>
+                <div class="box7">
+                </div>
+            </div>
+        </div>
+    
+
     </section>
     <section id="CONTACT" class="section">
         <div class="division-white">
@@ -162,8 +186,6 @@
             <div class="triangle-bottom">
                 <span class="panel-indicator">CONTACT</span>
             </div>
-            <div class="line-left"></div>
-            <div class="line-bottom"></div>
             <img id="img-contact-section" class="img img-contact-section" src="image/contact-image.png">
         </div>
         <div id="contact-content" class="contact-content">
@@ -175,7 +197,27 @@
             <span>Contact    :  + 63 955 265 0022</span>
         </div>
     </section>
-    <script src="myscripts.js"></script>
+
+        <!-- Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="myscripts.js"></script>
+        <script>
+            function rotate() {
+                var lastChild = $('.slider div:last-child').clone();
+                /*$('#test').html(lastChild)*/
+                $('.slider div').removeClass('firstSlide')
+                $('.slider div:last-child').remove();
+                $('.slider').prepend(lastChild)
+                $(lastChild).addClass('firstSlide')
+            }
+    
+            window.setInterval(function () {
+                rotate()
+            }, 4000);
+    
+        </script>
+    
+
 </body>
 
 </html>
