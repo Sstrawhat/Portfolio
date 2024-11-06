@@ -18,13 +18,106 @@
     <div class="navigation">
         <ul>
             <li><a class="nav" id="home-nav" href="#HOME">HOME</a></li>
-            <li><a class="nav" id="about-nav"  href="#ABOUT">ABOUT</a></li>
-            <li><a class="nav" id="skill-nav"  href="#SKILL">SKILL</a></li>
-            <li><a class="nav" id="project-nav"  href="#PROJECT">PROJECT</a></li>
-            <li><a class="nav" id="contact-nav"  href="#CONTACT">CONTACT</a></li>
+            <li><a class="nav" id="about-nav" href="#ABOUT">ABOUT</a></li>
+            <li><a class="nav" id="skill-nav" href="#SKILL">SKILL</a></li>
+            <li><a class="nav" id="project-nav" href="#PROJECT">PROJECT</a></li>
+            <li><a class="nav" id="contact-nav" href="#CONTACT">CONTACT</a></li>
         </ul>
     </div>
-    <section id="HOME" class="section">
+    <section id="HOME" class="page-section">
+        <div class="content" style="display: flex; align-items: center;">
+            <div class="content-text">
+                <h1>HI, I AM ASHLEY FAJARDO</h1>
+                <h1>A <span class="hobby">SOFTWARE DEVELOPER</span></h1>
+                <button type="button" class="btn">Download Resume</button>
+            </div>
+        </div>
+        <div class="polygon">
+        </div>
+        <div class="polygon-menu-indicator">
+            <span>HOME</span>
+        </div>
+        <img class="img-section" src="image/home-image.png">
+
+    </section>
+    <section id="ABOUT" class="page-section">
+        <div class="content" style="display: flex; align-items: center;">
+            <div class="content-text">
+              <p>
+                A passionate and results-oriented software
+                    engineer with 4 years of experience designing,
+                    building, and deploying high-quality apps.
+                    Proficient in a variety of programming
+                    languages and frameworks, including
+                    [C#,SQL HTML,CSS,JAVASCRIPT,
+                    ASP.NET, .NET, Entity framework,
+                    Figma and others], with an emphasis on clean,
+                    maintainable code and scalable software solutions.
+              </p>
+            </div>
+        </div>
+        <div class="polygon"></div>
+        <div class="polygon-menu-indicator">
+            <span>ABOUT</span>
+        </div>
+        <img class="img-section" src="image/about-image.png">
+    </section>
+    <section id="SKILL" class="page-section">
+        <div class="skill-line-vertical">
+            <div class="skill-circle skill-circle-left skill-netcore">
+                <div class="skill-line-left"></div>
+                <img src="image/netcore.png">
+                <div class="left-box"></div>
+            </div>
+            <div class="skill-circle skill-circle-right skill-csharp">
+                <div class="skill-line-right"></div>
+                <img src="image/csharp.png">
+                <div class="right-box"></div>
+            </div>
+            <div class="skill-circle skill-circle-left skill-sql">
+                <div class="skill-line-left"></div>
+                <img src="image/sql.png">
+                <div class="left-box"></div>
+            </div>
+            <div class="skill-circle skill-circle-right skill-js">
+                <div class="skill-line-right"></div>
+                <img src="image/js.png">
+                <div class="right-box"></div>
+            </div>
+            <div class="skill-circle skill-circle-left skill-html">
+                <div class="skill-line-left"></div>
+                <img src="image/html.png">
+                <div class="left-box"></div>
+            </div>
+            <div class="skill-circle skill-circle-right skill-css">
+                <div class="skill-line-right"></div>
+                <img src="image/css.png">
+                <div class="right-box"></div>
+            </div>
+        </div>
+        <div class="polygon"></div>
+        <div class="polygon-menu-indicator">
+            <span>SKILL</span>
+        </div>
+        <img class="img-section-2" src="image/skill-2-image.png">
+        <img class="img-section" src="image/skill-image.png">
+    </section>
+    <section id="PROJECT" class="page-section">
+
+
+        <div class="polygon"></div>
+        <div class="polygon-menu-indicator">
+            <span>PROJECT</span>
+        </div>
+
+    </section>
+    <section id="CONTACT" class="page-section">
+        <div class="polygon"></div>
+        <div class="polygon-menu-indicator">
+            <span>CONTACT</span>
+        </div>
+    </section>
+    <!-- <section id="HOME" class="section">
         <div class="division-white" id="division-white-home">
             <div class="triangle-left"></div>
             <div class="triangle-bottom">
@@ -196,27 +289,11 @@
             <span>Email      : ash.fajardo07@gmail.com</span>
             <span>Contact    :  + 63 955 265 0022</span>
         </div>
-    </section>
+    </section> -->
 
-        <!-- Js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="myscripts.js"></script>
-        <script>
-            function rotate() {
-                var lastChild = $('.slider div:last-child').clone();
-                /*$('#test').html(lastChild)*/
-                $('.slider div').removeClass('firstSlide')
-                $('.slider div:last-child').remove();
-                $('.slider').prepend(lastChild)
-                $(lastChild).addClass('firstSlide')
-            }
-    
-            window.setInterval(function () {
-                rotate()
-            }, 4000);
-    
-        </script>
-    
+    <!-- Js -->
+    <script src="myscripts.js"></script>
+
 
 </body>
 

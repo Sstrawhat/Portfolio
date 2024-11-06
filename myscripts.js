@@ -10,8 +10,8 @@ var projectsection = document.getElementById('PROJECT');
 var contactsection = document.getElementById('CONTACT');
 
 const options = {
-    rootMargin:"120px",
-    threshold : 0.5
+    rootMargin: "120px",
+    threshold: 0.5
 }
 
 const observer = new IntersectionObserver(callBack, options);
@@ -24,53 +24,57 @@ function callBack(entries) {
             switch (entry['target']['id']) {
                 case "HOME":
                     active('home-nav');
-                    showtime('division-white-home',300);
-                    showtime('home-content',500);
-                    showtime('sub-content-home',700);
-                    showtime('panel-indicator-home',800);
-                    
-
+                    showtime(document.getElementById('HOME').querySelector('.polygon'),300);  
+                    showtime(document.getElementById('HOME').querySelector('.content'),300);  
+                    showtime(document.getElementById('ABOUT').querySelector('.polygon-menu-indicator'),700); 
+                    showtime(document.getElementById('HOME').querySelector('.img-section'),800); 
+                    showtime(document.getElementById('HOME').querySelector('.content-text'),800); 
                     break;
                 case "ABOUT":
                     active('about-nav');
-                    showtime('division-white-about',300);
-                    showtime('about-content',500);
-                    showtime('sub-content-about',700);
-                    showtime('panel-indicator-about',800);
+                    showtime(document.getElementById('ABOUT').querySelector('.polygon'),300);
+                    showtime(document.getElementById('ABOUT').querySelector('.polygon-menu-indicator'),700); 
+                    showtime(document.getElementById('ABOUT').querySelector('.img-section'),800);  
+                    showtime(document.getElementById('ABOUT').querySelector('.content-text'),800);  
                     break;
                 case "SKILL":
                     active('skill-nav');
-                    showtime('division-white-skill',300);
-                    showtime('skill-tree-line',1000);
-                    showtime('panel-indicator-skill',800);
-                    showtime('circle-csharp',500);
-                    showtime('circle-netcore',600);
-                    showtime('circle-sql',700);
-                    showtime('circle-js',800);
-                    showtime('circle-html',900);
-                    showtime('circle-css',1000);
-                  
+                    showtime(document.getElementById('SKILL').querySelector('.polygon'),300);
+                    showtime(document.getElementById('SKILL').querySelector('.polygon-menu-indicator'),700);    
+                    showtime(document.getElementById('SKILL').querySelector('.img-section'),800);  
+                    showtime(document.getElementById('SKILL').querySelector('.img-section-2'),1000); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-line-vertical'),1000);  
+                    showtime(document.getElementById('SKILL').querySelector('.skill-netcore'),800); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-csharp'),900); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-sql'),1000); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-js'),1100); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-html'),1200); 
+                    showtime(document.getElementById('SKILL').querySelector('.skill-css'),1300); 
+                    
+
                     break;
                 case "PROJECT":
                     active('project-nav');
-                    showtime('division-white-project',300);
-                    showtime('panel-indicator-project',800);
+                    showtime(document.getElementById('PROJECT').querySelector('.polygon'),300);
+                    showtime(document.getElementById('PROJECT').querySelector('.polygon-menu-indicator'),700);   
                     break;
                 case "CONTACT":
                     active('contact-nav');
+                    showtime(document.getElementById('CONTACT').querySelector('.polygon'),300);
+                    showtime(document.getElementById('CONTACT').querySelector('.polygon-menu-indicator'),700);    
                     break;
             }
         }
     });
 }
 
-function showtime(element,time){
+function showtime(element, time) {
     setTimeout(() => {
-        document.getElementById(element).classList.add('show')
-      }, time);
+        element.classList.add('show')
+    }, time);
 }
 
-function active(element){
+function active(element) {
     document.getElementById('home-nav').classList.remove('active')
     document.getElementById('about-nav').classList.remove('active')
     document.getElementById('skill-nav').classList.remove('active')
