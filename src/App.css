@@ -37,5 +37,19 @@ html, body {
   position: absolute;
   top: 50px;
   left: 25px;
-  background-color: #0B2024;
 }
+.content{
+ display: inline;
+}
+.content .sub-content{
+  background-color: #0B2024;
+  margin: 10px;
+}
+.content-home, .content-experience, .content-project{
+  width: 600px;
+  height: 200px;
+} 
+.content-about, .content-skill, .content-contact{
+  width: 600px;
+  height: 200px;
+} 
