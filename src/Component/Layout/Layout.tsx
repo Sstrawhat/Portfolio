@@ -1,12 +1,10 @@
-import Content from "./Content"
+import Home from "../Content/Home"
 import Navigation from "./Navigation"
-
-
 
 const Layout = () => (
   <div className="layout">
-    <Content />
     <Navigation />
+    <Home />
   </div>
 )
 

@@ -2,16 +2,15 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    <div className='navigation'>
-        <ul>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Skill</a></li>
-            <li><a href='#'>Experience</a></li>
-            <li><a href='#'>Project</a></li>
-            <li><a href='#'>Contact</a></li>
-        </ul>
-    </div>
+    <>
+    <ul className='navigation'>
+        <li><a>HOME</a></li>
+        <li><a>EXPERIENCE</a></li>
+        <li><a>SKILLS</a></li>
+        <li><a>PROJECT</a></li>
+        <li><a>CONTACT</a></li>
+    </ul>
+    </>
   )
 }
 
