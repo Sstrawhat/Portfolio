@@ -1,17 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-const Navigation = () => {
-  return (
-    <>
-    <ul className='navigation'>
-        <li><a>HOME</a></li>
-        <li><a>EXPERIENCE</a></li>
-        <li><a>SKILLS</a></li>
-        <li><a>PROJECT</a></li>
-        <li><a>CONTACT</a></li>
-    </ul>
-    </>
-  )
+// Define the type for the props
+interface ChildProps {
+  ClickMenuEvent: (newMessage: string) => void,
+  currentMenu : string
 }
 
-export default Navigation
+const Navigation: React.FC<ChildProps> = ({ ClickMenuEvent, currentMenu }) => {
+  return (
+    <>
+      <ul className='navigation'>
+        <li><a onClick={() => ClickMenuEvent("home")} className={(currentMenu == "home") ? "active" : ""}>HOME</a></li>
+        <li><a onClick={() => ClickMenuEvent("experience")} className={(currentMenu == "experience") ? "active" : ""}>EXPERIENCE</a></li>
+        <li><a onClick={() => ClickMenuEvent("skills")} className={(currentMenu == "skills") ? "active" : ""}>SKILLS</a></li>
+        <li><a onClick={() => ClickMenuEvent("project")} className={(currentMenu == "project") ? "active" : ""}>PROJECT</a></li>
+        <li><a onClick={() => ClickMenuEvent("contact")} className={(currentMenu == "contact") ? "active" : ""}>CONTACT</a></li>
+      </ul>
+    </>
+  );
+};
+
+export default Navigation;
