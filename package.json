@@ -16,8 +16,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "framer-motion": "^12.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "three": "^0.175.0"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "prettier": "^3.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"

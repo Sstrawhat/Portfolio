@@ -1,28 +1,24 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; // Import LinkedIn icon
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
 
-const Home = () => {
+interface props {
+    showedMenu : string
+}
+const Home : React.FC<props> = ({showedMenu = "home"}) => {
   return (
-    <div className='home-content'>
-        <h1><span className='ash'>ASH</span>LEY FAJARDO</h1>
-        <div className='home-content-detail'>
-        <span className='title'>SOFTWARE DEVELOPER</span>
-        <p className='paragraph'>
-        I'm a Software Developer who turns ideas into fast, beautiful, and reliable digital products.
+    <section id="home" className='section section-odd'>
+<div className='container'>
+<h1 className='name'>ASHLEY FAJARDO</h1>
+      <h4>SOFTWARE DEVELOPER</h4>
+      <p>
+      Hey, I’m Ash — a software developer who loves building cool, useful stuff on the internet.
 
-I focus on building clean, high-performing solutions that offer great user experiences.
-I'm passionate about solving real-world problems with creativity, precision, and continuous improvement.
-        </p>
-        </div>
-        <div className='links'>
-            <ul>
-                <li><a><FontAwesomeIcon className='icon-link' icon={faLinkedin} /><span>LinkedIn</span></a></li>
-                <li><a><FontAwesomeIcon className='icon-link' icon={faGithub } /><span>Git</span></a></li>
-                <li><a><FontAwesomeIcon className='icon-link' icon={faEnvelope } /><span>Email</span></a></li>
-            </ul>
-        </div>
-    </div>
+I’m all about clean code, great user experiences, and figuring things out one bug at a time. Whether it’s crafting slick UIs or solving deep backend logic, I enjoy turning ideas into real, working products.
+
+Always curious. Always improving. Let’s build something awesome.
+
+      </p>
+</div>
+    </section>
   )
 }
 

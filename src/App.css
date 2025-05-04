@@ -8,37 +8,45 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial;
-  background-color: #011b21;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  color: #ababab;
+  overflow-x: hidden;
 }
-.layout{
-  width: 100vw;
-  height: 100vh;
+.mesh-geometry{
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
+
 .navigation{
+  position: absolute;
+  bottom: 100px;
+  left: calc(50% - 200px);
+  z-index: 1000;
+  list-style-type: none;
   margin: 0px;
   padding: 0px;
-  list-style-type: none;
-  font-size: 12px;
-  position: absolute;
-  bottom: 7vw;
-  left: 36vw;
-  z-index: 1000;
 }
-.navigation{
-  display: flex;
+.navigation.top{
+  position: fixed;
+  top: 20px;
+  left:20px ;
+}
+.navigation.scrolled {
+  position: sticky;
+  top:500px;
+  left: calc(50% - 200px);
+}
+.navigation li{
+  display: inline;
+  font-size: 12px;
+  margin:5px 15px 5px 15px;
 }
 .navigation li a{
-  padding: 10px 15px 15px 20px;
-  color: #ababab;
   cursor: pointer;
-  transition: 500ms;
-
+  color: #48DAFA;
 }
 .navigation li a.active{
   color :white  ;
@@ -50,57 +58,24 @@ html, body {
 }
 .content{
   position: absolute;
-  bottom: 0px;
-  right: 50px;
-  width: calc(100vw - 100px);
-  height: calc(100vh - 100px);
+  top: 0px;
+  left: 0px;
 }
-
-.home-content h1{
-  position: relative;
-  top: 10vh;
-  font-size: 50px;
+.section{
+  width: 100vw;
+  height: 100vh;
+}
+#home .container{
+width: 70%;
+position: relative;
+margin: auto;
+top: 100px;
+text-align: center;
+}
+#home h1{
   font-family: 'MyFont';
-  writing-mode: vertical-lr;
+  color: #C1BFBE;
 }
-.home-content .home-content-detail{
-  width: 300px;
-  padding: 20px;
-  position: absolute;
-  top:150px;
-  left: 100px;
-}
-.home-content .home-content-detail .title{
-  font-size: 15px;
-  font-family: 'MyFont';
-  color: #02a6cb;
-}
-.home-content .home-content-detail p{
-  font-size: 12px;  
-  font-weight: 500; 
-}
-.home-content .links{
-  width:200px;
-  padding: 10px;
-  position: absolute;
-  top:150px;
-  right: 200px;
-}
-.home-content .links ul{
-  list-style: none;
-}
-.content .links li a{
-  font-size: 12px;
-  color: #ababab;
-  word-spacing: 10px;
-  position: relative;
-  cursor: pointer;
-}
-.home-content .links li .icon-link{
-  font-size: 20px;
-  padding: 10px;
-}
-.content .links li span{
-  position: absolute;
-  top:-15px;
+#home h4{
+  
 }
