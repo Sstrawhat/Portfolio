@@ -28,8 +28,9 @@ html, body {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  
 }
-.navigation.top{
+.navigation{
   position: fixed;
   top: 20px;
   left:20px ;
@@ -66,7 +67,7 @@ html, body {
   height: 100vh;
 }
 #home .container{
-width: 70%;
+width: 50%;
 position: relative;
 margin: auto;
 top: 100px;
@@ -76,6 +77,10 @@ text-align: center;
   font-family: 'MyFont';
   color: #C1BFBE;
 }
-#home h4{
-  
+#home .title{
+  font-family: 'MyFont';
+  color: #48DAFA;
+}
+#home .paragraph{
+  font-size: 12px;
 }

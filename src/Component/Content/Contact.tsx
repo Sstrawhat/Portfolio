@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface props {
-    showedMenu : string
+    showedMenu? : string
 }
 const Contact : React.FC<props> = ({showedMenu = "home"}) => {
   return (

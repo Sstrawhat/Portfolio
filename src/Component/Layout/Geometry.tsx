@@ -1,12 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
-interface Props {
-  showedMenu: string;
-  parentState: string;
+interface props {
+  showedMenu? : string
 }
 
-const Geometry: React.FC<Props> = ({ showedMenu, parentState }) => {
+const Geometry: React.FC<props> = ({showedMenu = "home"}) => {
+
+  const [observerState,setObserver] = useState("home");
+
+
+
+
   const containerRef = useRef<HTMLDivElement | null>(null);
   const THREERef = useRef<{
     points: THREE.Points;

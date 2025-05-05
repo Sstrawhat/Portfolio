@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react"
 import Geometry from "./Geometry"
 import Navigation from "./Navigation"
-import Content from "./Content";
 import Home from "../Content/Home";
 import Experience from "../Content/Experience";
 import Skills from "../Content/Skills";
@@ -17,7 +16,8 @@ const Layout :React.FC = () => {
   const ClickMenu = (menu : string, isfromObserver : boolean = false) => {
 
     currentMenu.current = menu;
-    setmenuState(menu); // Always update state for Geometry
+    setmenuState(menu);
+     // Always update state for Geometry
   
     // Only scroll on manual clicks
     if (!isfromObserver) {
@@ -29,36 +29,36 @@ const Layout :React.FC = () => {
 
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            ClickMenu(entry.target.id ,true); // Trigger ClickMenu when the section is in view
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5, // Visible when 50% of the element is in view
-      }
-    );
-  
-    // Observe the elements by their IDs
-    const sections = ["home", "experience", "skills", "project", "contact"];
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el); // Only observe if the element exists
-    });
-  
-  }, []); // Empty dependency array, so this only runs on mount and unmount
-  
 
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              ClickMenu(entry.target.id,true)
+            }
+          });
+        },
+        {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5, // Visible when 50% of the element is in view
+        }
+      );
+    
+      // Observe the elements by their IDs
+      const sections = ["home", "experience", "skills", "project", "contact"];
+      sections.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el); // Only observe if the element exists
+      });
+    
+    },[]); // Empty dependency array, so this only runs on mount and unmount
 
   return (
   <div className="layout">
-    <Geometry parentState={menuState} showedMenu={currentMenu.current} />
+    <Geometry showedMenu={currentMenu.current} />
     <Navigation  ClickMenuEvent={ClickMenu} currentMenu={currentMenu.current} />
     <div className="content">
       <Home showedMenu={currentMenu.current} />

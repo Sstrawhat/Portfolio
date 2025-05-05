@@ -14,12 +14,12 @@ const Navigation: React.FC<ChildProps> = ({ ClickMenuEvent, currentMenu }) => {
   const navPosition: any = {
     top : (isHome) ? 'unset' : '20px',
     bottom : (isHome) ? '100px' : 'unset',
-    position : (isHome) ? 'absolute' : 'fixed',
+    position : (isHome) ? 'absolute' : 'sticky',
   }
 
   return (
     <>
-      <motion.ul className={'navigation'} transition={{duration : 0.5}} animate={navPosition} >
+      <motion.ul className={'navigation'} >
         <li><a onClick={() => ClickMenuEvent("home")} className={(currentMenu == "home") ? "active" : ""}>HOME</a></li>
         <li><a onClick={() => ClickMenuEvent("experience")} className={(currentMenu == "experience") ? "active" : ""}>EXPERIENCE</a></li>
         <li><a onClick={() => ClickMenuEvent("skills")} className={(currentMenu == "skills") ? "active" : ""}>SKILLS</a></li>
