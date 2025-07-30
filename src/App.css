@@ -74,13 +74,159 @@ top: 100px;
 text-align: center;
 }
 #home h1{
+  font-size: 100px;
+  position: relative;
+  top: 100px;
   font-family: 'MyFont';
   color: #C1BFBE;
 }
 #home .title{
+  position: relative;
+  top: 50px;
   font-family: 'MyFont';
   color: #48DAFA;
 }
 #home .paragraph{
   font-size: 12px;
+  position: relative;
+  top: 5vh;
+}
+#home .link{
+  position: relative;
+  top: 100px;
+}
+#home .link ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#home .link li{
+  display: inline;
+}
+#home .link a{
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #48DAFA;
+  transition: 0.5s;
+}
+.section.s-experience{
+  width: 100vw;
+  height: 110vh;
+}
+#experience .container {
+  position: relative;
+  margin: auto;
+  top: 150px;
+  width: 60%;
+  height: calc(100% - 75px);
+  border-left: solid 2px #48DAFA;
+}
+#experience .container .circle-start{
+  width: 20px;
+  height: 20px;
+  border:solid 2px #48DAFA;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px #48DAFA;
+  position: relative;
+  top: -22px;
+  left: -13px;
+}
+#experience .exp-year{
+  font-size: 12px;
+  color: #48DAFA;
+}
+
+#experience .exp-title{
+  font-size: 12px;
+  color: #ffffff;
+   font-weight: 600;
+}
+#experience .exp-location{
+  font-size: 12px;
+  color: #ffffff;
+}
+#experience li{
+    margin: 20px 0px 20px 0px;
+}
+#experience li li{
+  font-size: 12px;
+  color: #ffffff;
+}
+#experience .exp-list-title{
+  text-decoration: underline;
+  font-style: italic;
+}
+#skills .container {
+  position: relative;
+  margin: auto;
+  top: 150px;
+  width: 80%;
+  height: calc(80% - 75px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#skills .container .widget{
+  width: 150px;
+  min-height: 100px;
+  border: solid 2px #ffffff;
+  position: relative;
+  margin: 0px 30px 0px 30px;
+}
+#skills .container .widget .widget-title{
+  position: absolute;
+  font-size: 12px;
+  color: #ffffff;
+  bottom: 5px;
+  right: 10px;;
+}
+
+#project .container {
+  position: relative;
+  margin: auto;
+  top: 150px;
+  width: 60%;
+  height: calc(80% - 75px);
+  border-left: solid 2px #48DAFA;
+}
+#project .container .circle-start{
+  width: 20px;
+  height: 20px;
+  border:solid 2px #48DAFA;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px #48DAFA;
+  position: relative;
+  top: -22px;
+  left: -13px;
+}
+#project .exp-year{
+  font-size: 12px;
+  color: #48DAFA;
+  font-weight: 600;
+}
+
+#project .exp-title{
+  font-size: 12px;
+  color: #ffffff;
+   font-weight: 600;
+}
+#project .exp-location{
+  font-size: 12px;
+  color: #ffffff;
+}
+#project li{
+    margin: 20px 0px 20px 0px;
+}
+#project li li{
+  font-size: 12px;
+  color: #ffffff;
+}
+#project .project-tool{
+  padding: 2px 10px 2px 10px;
+  margin: 0px 2px 0px 2px;
+  border: solid 1px #48DAFA;
+  color: #48DAFA;
+  font-size: 12px;
+  border-radius: 5px;
 }

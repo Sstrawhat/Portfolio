@@ -7,11 +7,6 @@ interface props {
 
 const Geometry: React.FC<props> = ({showedMenu = "home"}) => {
 
-  const [observerState,setObserver] = useState("home");
-
-
-
-
   const containerRef = useRef<HTMLDivElement | null>(null);
   const THREERef = useRef<{
     points: THREE.Points;
@@ -49,14 +44,14 @@ const Geometry: React.FC<props> = ({showedMenu = "home"}) => {
 
     for (let i = 0; i < particleCount; i++) {
       const index = i * 3;
-      positions[index] = (Math.random() - 0.5) * 30;
-      positions[index + 1] = (Math.random() - 0.5) * 30;
-      positions[index + 2] = (Math.random() - 0.5) * 30;
+      positions[index] = (Math.random() - 1) * 30;
+      positions[index + 1] = (Math.random() - 1) * 30;
+      positions[index + 2] = (Math.random() - 1) * 30;
     }
 
     geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
 
-    const material = new THREE.PointsMaterial({ size: 0.05, color : '#48DAFA'});
+    const material = new THREE.PointsMaterial({ size: 1, color : '#48DAFA'});
     const particles = new THREE.Points(geometry, material);
     scene.add(particles);
 
