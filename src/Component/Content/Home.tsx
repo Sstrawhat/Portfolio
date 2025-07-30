@@ -21,7 +21,7 @@ const Home : React.FC<props> = ({showedMenu = "home"}) => {
         <ul>
           <li><a target="_blank" href='https://www.linkedin.com/in/ashleyfajardo07'><FontAwesomeIcon className='icon-link' icon={faLinkedin} /></a></li>
           <li><a target="_blank" href='https://github.com/Sstrawhat'><FontAwesomeIcon className='icon-link' icon={faGithub } /></a></li>
-          <li><a target="_blank" href='../public/resume/Ashley_Fajardo_Resume.pdf'><FontAwesomeIcon className='icon-link' icon={faFile } /></a></li>
+          <li><a target="_blank" href='../PORTFOLIO/public/resume/Ashley_Fajardo_Resume.pdf'><FontAwesomeIcon className='icon-link' icon={faFile } /></a></li>
         </ul>
       </div>
 </div>
