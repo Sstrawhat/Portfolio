@@ -65,7 +65,7 @@ const Layout :React.FC = () => {
       <Experience showedMenu={currentMenu.current} />
       <Skills showedMenu={currentMenu.current} />
       <Project showedMenu={currentMenu.current} />
-      <Contact showedMenu={currentMenu.current} />
+      {/* <Contact showedMenu={currentMenu.current} /> */}
     </div>
   </div>
   )

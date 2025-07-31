@@ -30,7 +30,7 @@ const Project : React.FC<props> = ({showedMenu = "home"}) => {
              <span className='project-tool'>Bootstrap</span>
              <span className='project-tool'>Sql Server</span>
              <br/><br/>
-             <a className='exp-git' href='https://github.com/Sstrawhat/GARGETV2.git'>Check   Github</a>
+             <a className='exp-git' target='_blank' href='https://github.com/Sstrawhat/GARGETV2.git'>Check   Github</a>
           </li>       
           <li>
             <span className='exp-year'>BMS (Barangay Managment System)</span>
@@ -46,7 +46,7 @@ const Project : React.FC<props> = ({showedMenu = "home"}) => {
             <span className='project-tool'>Bootstrap</span>
             <span className='project-tool'>SQL Server</span>
             <br/><br/>
-                     <a className='exp-git' href='https://github.com/Sstrawhat/BMS.git'>Check   Github</a>
+                     <a className='exp-git' target='_blank' href='https://github.com/Sstrawhat/BMS.git'>Check   Github</a>
           </li>
           <li>
             <span className='exp-year'>BHCS (Barangay Health Center System)</span>
@@ -61,8 +61,8 @@ const Project : React.FC<props> = ({showedMenu = "home"}) => {
             <span className='project-tool'>Javascript</span>
             <span className='project-tool'>Jquery</span>
             <span className='project-tool'>Bootstrap</span>
-            <span className='project-tool'>SQL Server</span>
-            <a className='exp-git' href='https://github.com/Sstrawhat/HC.git'>Check   Github</a>
+            <span className='project-tool'>SQL Server</span>    <br/><br/>
+            <a className='exp-git' target='_blank' href='https://github.com/Sstrawhat/HC.git'>Check   Github</a>
           </li>
         </ul>
       </div>

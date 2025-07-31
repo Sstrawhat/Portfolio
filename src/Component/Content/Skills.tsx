@@ -5,7 +5,7 @@ interface props {
 }
 const Skills : React.FC<props> = ({showedMenu = "home"}) => {
   return (
-    <section id="skills" className='section section-odd'>
+    <section id="skills" className='section s-skill section-odd'>
       <div className='container'>
         <div className='widget'>
           <span className='widget-title'>C-SHARP</span>

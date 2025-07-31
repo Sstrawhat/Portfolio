@@ -24,7 +24,7 @@ const Navigation: React.FC<ChildProps> = ({ ClickMenuEvent, currentMenu }) => {
         <li><a onClick={() => ClickMenuEvent("experience")} className={(currentMenu == "experience") ? "active" : ""}>EXPERIENCE</a></li>
         <li><a onClick={() => ClickMenuEvent("skills")} className={(currentMenu == "skills") ? "active" : ""}>SKILLS</a></li>
         <li><a onClick={() => ClickMenuEvent("project")} className={(currentMenu == "project") ? "active" : ""}>PROJECT</a></li>
-        <li><a onClick={() => ClickMenuEvent("contact")} className={(currentMenu == "contact") ? "active" : ""}>CONTACT</a></li>
+        {/* <li><a onClick={() => ClickMenuEvent("contact")} className={(currentMenu == "contact") ? "active" : ""}>CONTACT</a></li> */}
       </motion.ul>
     </>
   );
