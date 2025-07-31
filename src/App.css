@@ -168,19 +168,21 @@ text-align: center;
   align-items: flex-start;
 }
 #skills .container .widget{
-  width: 150px;
-  min-height: 100px;
-  border: solid 2px #ffffff;
+  width: 200px;
+  min-height: 30px;
+  border: solid 2px #00b7ff;
   position: relative;
   margin: 0px 30px 0px 30px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px #00b7ff;
 }
 #skills .container .widget .widget-title{
   position: absolute;
   font-size: 12px;
   color: #ffffff;
-  bottom: 5px;
-  right: 10px;;
 }
+
 
 #project .container {
   position: relative;
@@ -229,4 +231,12 @@ text-align: center;
   color: #48DAFA;
   font-size: 12px;
   border-radius: 5px;
+}
+
+.exp-git{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+
 }
